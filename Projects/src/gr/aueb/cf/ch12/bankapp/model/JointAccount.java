@@ -13,7 +13,7 @@ public class JointAccount {
 
     public JointAccount() {}
 
-    public JointAccount(String firstname1, String firstname2, String lastname1, String lastname2, int id, String iban, String ssnKey) {
+    public JointAccount(String firstname1, String firstname2, String lastname1, String lastname2, int id, String iban, String ssnKey, double balance) {
         this.firstname1 = firstname1;
         this.firstname2 = firstname2;
         this.lastname1 = lastname1;
@@ -78,6 +78,8 @@ public class JointAccount {
     public void setSsnKey(String ssnKey) {
         this.ssnKey = ssnKey;
     }
+
+
 
     public String getAccountState() {
         return "(" + id + ", " + iban + ", " + firstname1 + ", "

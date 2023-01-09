@@ -6,11 +6,11 @@ import gr.aueb.cf.ch12.bankapp.model.OverdraftAccount;
 public class BankAppMain {
     public static void main(String[] args) {
 
-        JointAccount account = new JointAccount("Petros", "Giannis", "Moustakis", "Moustakis", 24104, "GR4839583", "R49503");
+        JointAccount account = new JointAccount("Petros", "Giannis", "Moustakis", "Moustakis", 24104, "GR4839583", "R49503",320);
         OverdraftAccount balance = new OverdraftAccount();
 
         balance.setBalance(320);
-        balance.setSsn("R49503");
+        balance.setSsn("R4950");
 
         try {
             if (balance.getSsn().equals(account.getSsnKey())){
@@ -23,5 +23,5 @@ public class BankAppMain {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+   }
 }

@@ -2,7 +2,7 @@ package gr.aueb.cf.ch12.bankapp.model;
 
 import gr.aueb.cf.ch12.bankapp.model.JointAccount;
 
-public class OverdraftAccount {
+public class OverdraftAccount extends JointAccount {
 
     private JointAccount account;
     private double balance;
