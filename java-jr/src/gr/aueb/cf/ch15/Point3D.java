@@ -5,6 +5,8 @@ public class Point3D extends Point2D {
     private double z;
 
     public Point3D() {
+        super();
+        z = 9;
     }
 
     public Point3D(double x, double y, double z) {
@@ -34,5 +36,10 @@ public class Point3D extends Point2D {
     protected void movePlusOne() {
         super.movePlusOne();
         z += 1;
+    }
+
+    @Override
+    public double getDistanceFromOrigin() {
+        return Math.sqrt(Math.pow(super.getDistanceFromOrigin(),2.0) + Math.pow((z),2.0));
     }
 }

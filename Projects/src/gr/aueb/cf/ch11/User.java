@@ -41,4 +41,5 @@ public class User {
     public String getUserState() {
         return "{" + id + ", " + firstname + ", " + lastname + "}";
     }
+
 }

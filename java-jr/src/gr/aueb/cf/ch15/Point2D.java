@@ -4,8 +4,8 @@ public class Point2D extends Point {
     private double y;
 
     public Point2D() {
-//        super();
-//        y = 0;
+        super();
+        y = 5;
     }
 
         public Point2D (double x, double y) {
@@ -37,5 +37,11 @@ public class Point2D extends Point {
     protected void movePlusOne() {
         super.movePlusOne();
         y += 1;
+    }
+
+    @Override
+    public double getDistanceFromOrigin() {
+        return Math.sqrt(Math.pow(super.getDistanceFromOrigin(),2.0) + Math.pow((y),2.0));
+
     }
 }

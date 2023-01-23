@@ -8,11 +8,13 @@ package gr.aueb.cf.ch11_ch12;
 
 //Private constructor
 public class Student {
+    private static int studentsCount = 0;
     private int id;
     private String firstname;
     private String lastname;
 
     public Student() {
+        studentsCount++;
     }
 
     public Student(int id, String firstname, String lastname) {
@@ -43,6 +45,10 @@ public class Student {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    public static int getStudentsCount() {
+        return studentsCount;
     }
 
 }

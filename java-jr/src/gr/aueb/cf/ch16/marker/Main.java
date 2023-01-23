@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Item book = new Book(1, "123", "Petros", "Java");
         Item cd = new CompactDisk(1, "Prince");
-        
+
         deliver(book);
         deliver(cd);
     }

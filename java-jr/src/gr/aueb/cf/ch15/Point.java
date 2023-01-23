@@ -4,10 +4,12 @@ public class Point {
 
     private double x;
 
-    public Point() {}
+    public Point() {
+        x = 8;
+    }
 
     public Point(double x) {
-        this.x = x;
+        this.x = 0;
     }
 
     public double getX() {
@@ -28,13 +30,12 @@ public class Point {
      */
 
     public void movePlus10() {
-//        x += 10;
-//    }
-
-        for (int i = 1; i <= 10; i++) {
-            movePlusOne();
-        }
+        x += 10;
     }
+
+//        for (int i = 1; i <= 10; i++) {
+//            movePlusOne();
+//        }
 
     protected void movePlusOne() {
         x += 1;
@@ -47,4 +48,12 @@ public class Point {
     private void reset() {
         x = 0;
     }
+
+    public double getDistanceFromOrigin() {
+        double distance;
+        distance = x ;
+
+        return distance;
+    }
+
 }

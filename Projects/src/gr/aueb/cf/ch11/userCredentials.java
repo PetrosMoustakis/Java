@@ -1,14 +1,14 @@
 package gr.aueb.cf.ch11;
 
-public class UserCredentials {
+public class userCredentials {
 
     private long id;
     private String username;
     private String password;
 
-    public UserCredentials() {}
+    public userCredentials() {}
 
-    public UserCredentials(long id, String username, String password) {
+    public userCredentials(long id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;

@@ -26,7 +26,7 @@ public class FlyweightFactory {
         point = null;
 
         for (ImmutablePoint p : points) {
-            if ((p.getX() == y) && (p.getY() == y)) {
+            if ((p.getX() == x) && (p.getY() == y)) {
                 point = p;
                 found = true;
                 break;
@@ -34,5 +34,30 @@ public class FlyweightFactory {
         }
         return found;
     }
+
+    private static boolean circleExists(ImmutablePoint point, int radius, ImmutableCircle circle) {
+        boolean found = false;
+        circle = null;
+
+        for (ImmutableCircle c: circles) {
+            if ((c.getCenter() == point) && (c.getRadius() == radius)) {
+                circle = c;
+                found = true;
+                break;
+            }
+        }
+         return found;
+    }
+
+    public static ImmutableCircle getCircle (ImmutablePoint center, int radius) {
+        ImmutableCircle circle = null;
+
+        if (!circleExists(center,radius,circle)) {
+            circle = new ImmutableCircle(center,radius);
+            circles.add(circle);
+        }
+        return circle;
+    }
+
  }
 
