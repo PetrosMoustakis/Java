@@ -23,6 +23,6 @@ public class DigitsSumApp {
             num = num / 10;
         } while (num != 0);
 
-        System.out.printf("DigitsCount = $d , sum= %d ", digitsCount ,sum);
+        System.out.printf("DigitsCount = %d , sum= %d ", digitsCount ,sum);
         }
     }

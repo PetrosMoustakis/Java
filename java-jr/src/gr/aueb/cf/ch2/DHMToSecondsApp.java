@@ -1,7 +1,5 @@
 package gr.aueb.cf.ch2;
 
-import java.sql.SQLOutput;
-import java.util.Locale;
 import java.util.Scanner;
 
 /*
@@ -15,11 +13,11 @@ public class DHMToSecondsApp {
        final int SEC_PER_DAY = 3600 * 24;
        final int SEC_PER_HOUR = 3600;
        final int SEC_PER_MINUTE = 60;
-       long totalSeconds = 0L;
-       long inputDays = 0L;
-       long inputHours = 0L;
-       long inputMinutes = 0L;
-       long inputSecs = 0L;
+       long totalSeconds ;
+       long inputDays ;
+       long inputHours;
+       long inputMinutes;
+       long inputSecs ;
 
         System.out.println("Please insert days, hours, minutes, seconds (ints)");
         inputDays = in.nextLong();

@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch11_ch12.composition;
 
-public class ImmutableCircle2 {
+public final class ImmutableCircle2 {
     private final ImmutablePoint center;
     private final int radius;
 

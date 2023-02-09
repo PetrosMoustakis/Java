@@ -110,4 +110,15 @@ public class Project1 {
         } return count > threshold;
     }
 
+//    public static boolean isSameEnding(int[] arr, int threshold) {
+//        int[] count = new int[10];
+//        int num ;
+//
+//        for (int i = 0; i < arr.length; i++) {
+//        num = arr[i] % 10;
+//        count[num]++;
+//        }
+//        return (count[] )> threshold;
+//    }
+
 }

@@ -1,13 +1,22 @@
 package gr.aueb.cf.ch16;
 
-public class Circle extends AbstractShape implements ICircle {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Circle extends AbstractShape implements ICircle,Cloneable, Serializable {
 
     private double radius;
+    private static final long serialVersionUID = 1L;
 
     Circle () {}
 
     public Circle(double radius) {
         this.radius = radius;
+    }
+
+    //copy constructor
+    public Circle(Circle circle) {
+        this.radius = circle.radius;
     }
 
     public double getRadius() {
@@ -38,5 +47,30 @@ public class Circle extends AbstractShape implements ICircle {
     @Override
     public double getCircumference() {
         return Math.PI / (radius * 2);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return (Circle) super.clone();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Circle circle = (Circle) o;
+
+        return Double.compare(circle.getRadius(), getRadius()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        long temp;
+        temp = Double.doubleToLongBits(getRadius());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
 }

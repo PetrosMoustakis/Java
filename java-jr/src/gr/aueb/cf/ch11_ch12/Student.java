@@ -21,6 +21,7 @@ public class Student {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
+        studentsCount++;
     }
 
     public int getId() {

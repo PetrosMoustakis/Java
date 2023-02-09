@@ -11,7 +11,7 @@ public interface IWelcome {
     }
 
     private void sayCodingFactory() {
-        System.out.println("Coding Factory");
+        System.out.print ("Coding Factory ");
     }
 
     static void sayHelloCoding() {

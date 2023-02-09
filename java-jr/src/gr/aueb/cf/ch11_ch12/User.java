@@ -3,7 +3,7 @@ package gr.aueb.cf.ch11_ch12;
 //User Javabean.
 
 public class User {
-    private static int usersCount = 10;
+    private static int usersCount = 0;
     private long id;
     private String username;
     private String password;
@@ -14,7 +14,7 @@ public class User {
     }
 
     public User () {
-        usersCount = 10;
+        usersCount++;
     }
 
     public User(long id, String username, String password) {

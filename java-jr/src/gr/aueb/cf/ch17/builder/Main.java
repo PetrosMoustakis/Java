@@ -8,5 +8,7 @@ public class Main {
                 .author("Th.")
                 .title("Java I")
                 .build();
+
+        System.out.println(book2);
     }
 }

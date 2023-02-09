@@ -15,6 +15,7 @@ public class BreakAndContinueDemo {
         while (true) {
             if (i==10) break;
             i++;
+            System.out.println(i);
         }
         while (j <=10) {
             j++;

@@ -16,9 +16,18 @@ public class TraverseApp {
 
         System.out.println("\u2764");
 
+        System.out.println(reverse(firstname));
+
         // Reverse Traverse
         for (int i = cf.length() - 1; i >= 0; i--) {
             System.out.print(cf.charAt(i) + " ");
         }
     }
+        public static String reverse (String s) {
+            String result = "";
+            for (int i = s.length() - 1; i >= 0; i--) {
+                result += s.charAt(i);
+            }
+            return result;
+        }
 }

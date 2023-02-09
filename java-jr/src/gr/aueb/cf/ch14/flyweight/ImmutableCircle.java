@@ -10,7 +10,7 @@ public final class ImmutableCircle {
        radius = 0;
    }
 
-    public ImmutableCircle(ImmutablePoint center, int radius) {
+   ImmutableCircle(ImmutablePoint center, int radius) {
         this.center = center;
         this.radius = radius;
     }

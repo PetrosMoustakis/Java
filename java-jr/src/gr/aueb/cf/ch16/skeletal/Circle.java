@@ -1,6 +1,8 @@
 package gr.aueb.cf.ch16.skeletal;
 
-public class Circle extends AbstractShape implements ICircle, ITwoDimensional {
+import java.io.Serializable;
+
+public class Circle extends AbstractShape implements ICircle, ITwoDimensional, Cloneable, Serializable {
 
     private double radius;
 
